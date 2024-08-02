@@ -702,3 +702,140 @@ a {
     right: -74px;
     bottom: 56px;
 }
+
+/* ===Testimonial=== */
+.testimonial {
+    margin-top: 160px;
+    background: #fff;
+}
+
+.testimonial__top {
+    text-align: center;
+}
+
+.testimonial__label {
+    position: relative;
+    margin-left: 30px;
+    color: #696d77;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.testimonial__label::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+}
+
+.testimonial__heading {
+    margin-top: 12px;
+}
+
+.testimonial__desc {
+    margin: 18px auto 0;
+    width: 435px;
+    color: #696d76;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.testimonial__list {
+    display: flex;
+    column-gap: 30px;
+    overflow: hidden;
+}
+
+.testimonial__quote {
+    position: relative;
+    width: 570px;
+    height: 254px;
+    padding: 42px 28px;
+    color: #696d76;
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    line-height: 1.55;
+    background: #fff;
+    border: 1px solid #dfe2e8;
+    border-radius: 8px;
+}
+
+.testimonial__quote::after {
+    position: absolute;
+    bottom: -52px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-right: 1px solid #dfe2e8;
+    border-bottom: 1px solid #dfe2e8;
+    rotate: 45deg;
+}
+
+.testimonial__quote:hover {
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.1));
+    border: none;
+}
+
+.testimonial__quote:hover::after {
+    border: none;
+}
+
+.testimonial__image {
+    margin: 96px auto 20px;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background: #4ab5e3;
+    overflow: hidden;
+}
+
+.testimonial-item:nth-child(2) .testimonial__image {
+    background: #439f90;
+}
+
+.testimonial__thumb {
+    width: 100%;
+}
+
+.testimonial__name {
+    color: #070052;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.testimonial__job {
+    margin-top: 2px;
+    display: block;
+    color: #696d76;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.testimonial__dots {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 38px;
+}
+
+.testimonial__dot {
+    width: 20px;
+    height: 6px;
+    border: 1px solid #9b9fab;
+    border-radius: 1px;
+}
+
+.testimonial__active {
+    background: #7264d6;
+    border: none;
+}
