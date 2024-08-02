@@ -581,7 +581,8 @@ a {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: flex-start;
-    column-gap: 130px;
+    align-items: center;
+    gap: 160px 130px;
 }
 .feature__content {
     width: 470px;
