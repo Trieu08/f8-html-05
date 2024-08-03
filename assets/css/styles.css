@@ -882,6 +882,10 @@ a {
     line-height: 1.75;
 }
 
+.blog__btn {
+    width: 123px;
+}
+
 .blog__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -941,4 +945,142 @@ a {
 
 .blog-item__link:hover {
     color: #7264d6;
+}
+
+/* ===Apps=== */
+
+.apps__inner {
+    position: relative;
+    margin-top: 160px;
+    padding: 100px 0;
+    border-radius: 24px;
+    background: #7264d6;
+    text-align: center;
+}
+
+.apps__label {
+    position: relative;
+    left: 14px;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.apps__label::before {
+    position: absolute;
+    top: 10px;
+    left: -26px;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #fff;
+}
+
+.apps__heading {
+    margin-top: 12px;
+    color: #fff;
+}
+
+.apps__desc {
+    margin: 18px auto 0;
+    width: 435px;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.apps__download {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    margin-top: 38px;
+}
+
+.apps-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    border: none;
+    width: 182px;
+    height: 64px;
+    border-radius: 8px;
+}
+
+.apps-btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.get-btn__text {
+    display: block;
+    color: #7264d6;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.get-btn__store {
+    display: block;
+    color: #7264d6;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.apps__star {
+    position: absolute;
+    animation-name: star;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.apps__star:nth-of-type(1) {
+    top: 50px;
+    left: 112px;
+}
+
+.apps__star:nth-of-type(2) {
+    top: 50px;
+    right: 112px;
+}
+
+.apps__star:nth-of-type(3) {
+    bottom: 50px;
+    left: 166px;
+}
+
+.apps__star:nth-of-type(4) {
+    bottom: 50px;
+    right: 166px;
+}
+
+@keyframes star {
+    0% {
+        rotate: 0;
+        scale: 0.6;
+    }
+
+    25% {
+        scale: 0.8;
+        rotate: 90deg;
+    }
+
+    50% {
+        scale: 1;
+        rotate: 180deg;
+    }
+
+    75% {
+        rotate: 270deg;
+        scale: 1.2;
+    }
+
+    100% {
+        rotate: 360deg;
+        scale: 1.4;
+    }
 }
