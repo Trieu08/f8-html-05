@@ -880,13 +880,20 @@
                                     News letter
                                 </a>
                             </h3>
-                            <form class="search-form" action="#!" method="post">
+                            <form
+                                class="search-form"
+                                action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                                method="post"
+                                autocomplete="off"
+                            >
                                 <input
                                     class="search-form__input"
                                     type="email"
-                                    name=""
+                                    name="email"
                                     id="email"
                                     placeholder="Email address..."
+                                    required
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                 />
                                 <button
                                     class="search-form__btn btn"
